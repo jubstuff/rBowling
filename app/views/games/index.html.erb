@@ -1,0 +1,14 @@
+<h1>Bowling Games</h1>
+<%= link_to 'New Game', new_game_path %>
+<table>
+<% @games.each_with_index do |game, i| %>
+<tr>
+    <td>
+        Game <%= i+1 %>
+    </td>
+    <td>
+        <%= link_to 'Show Game', game %>
+    </td>
+</tr>
+<% end %>
+</table>

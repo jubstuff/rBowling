@@ -1,0 +1,13 @@
+<p><%= link_to '<< All games', games_path %></p>
+<table>
+    <tr>
+        <% (1..10).each do |i| %>
+            <th>Frame <%= i %></th>
+        <% end %>
+    </tr>
+    <tr>
+    <% @game.score.each do |g| %>
+        <td><%= g %></td>
+    <% end %>
+    </tr>
+</table>
